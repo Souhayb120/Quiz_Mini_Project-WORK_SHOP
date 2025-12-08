@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/hermeneus-one?styles=18764" rel="stylesheet">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="question-number">
+            Question <span id="current" style="background: transparent;">1</span> of <span id="total" style="background: transparent;">10</span>
+        </div>
+
+        <h5 class="scores">Score: <span></span></h5>
+
+        <h2 class="question-text" id="question">
+            What is the capital of Japan?
+        </h2>
+
+        <div class="options">
+            <button class="option">Kyoto</button>
+            <button class="option">Osaka</button>
+            <button class="option">Tokyo</button>
+            <button class="option">Hiroshima</button>
+        </div>
+
+        <div class="progress">
+            <div class="progress-fill" id="ProgressFill"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
