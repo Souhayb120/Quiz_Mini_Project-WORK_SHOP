@@ -21,15 +21,17 @@
 </div>
 
 
-    <script>
+<script>
     const score = localStorage.getItem("score") || 0;
     const totalQuestions = localStorage.getItem("totalQuestions") || 10;
+    const userName = localStorage.getItem("userName");
 
     document.getElementById("final-score").innerText =
-        `You got ${score} of ${totalQuestions} questions correct`;
+        `Congrats ${userName}, you got ${score} of ${totalQuestions} questions correct`;
 
     function restartQuiz() {
-        localStorage.clear();
+        localStorage.removeItem("score");
+        localStorage.removeItem("totalQuestions");
         window.location.href = "quiz_app.html";
     }
 
@@ -38,6 +40,7 @@
         window.location.href = "index.html";
     }
 </script>
+
 
 
 
