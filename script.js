@@ -1,36 +1,16 @@
-let username;
-let email;
+const submitBtn = document.getElementById("submit");
 
+submitBtn.addEventListener("click", function () {
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
 
-
-document.getElementById("submit").onclick = function () {
+  if (name === "" || email === "") {
+    alert("Please fill in all fields");
+    return;
+  }
  
-email = document.getElementById("email").value;
-username = document.getElementById("name").value;
-    //  email = document.getElementById("email").value = "";
-    //  username = document.getElementById("name").value = "";
-    setData()
-}
-function setData() {
-    localStorage.setItem("name", username)
-}
-
-function getData() {
-    localStorage.getData("name")
-}
-
-
-function display() {
-    getData()
-
-    document.getElementById("id").innerHTML = username;
-
-}
-
-display()
-
-//  window.location.href = `index.html`;
-
-
-
-
+  localStorage.setItem("userName", name);
+  localStorage.setItem("userEmail", email);
+ 
+  window.location.href = "quiz.html";
+});
