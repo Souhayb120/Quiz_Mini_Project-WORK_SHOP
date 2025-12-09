@@ -13,83 +13,37 @@ background:#ececec;
     padding: 30px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 8px 10px rgba(1,0,1,0.2);
-    margin: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 
 }
-.question-number{
-    display: flex;
-    justify-content: center;
-    gap:0.3rem;
-    padding: 20px;
-    margin-bottom: 10px;
-    background: transparent;
+
+.buttons{
+display: grid;
+justify-items: center;
+
+gap: 20px;
+width: 100%;
 }
-.scores{
-    text-align: end;
-    padding-right: 30px;
-    padding-bottom: 20px;
-      background: transparent;
-}
-.question-text{
-       font-size: 22px;
-    margin-bottom: 20px;
-    min-height: 70px;
-    background: transparent;
-
-
-}
-.options{
-      background: transparent;
-     display: grid;
-   grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin: 3rem;
-    text-align: center;  
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
- .options button{
-    width: 100%;
-    padding:  22px;
-    font-size: 20px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    background: #fcfbfb;
-    height: 100px;
-}
-
-
-
-.option:hover {
-    background: #e2e2e2;
-}
-
-
-.correct {
-    background-color: #4CAF50 !important;
-    color: white !important;
+.buttons > button{
+    width: 250px;
+    padding: 10PX;
+    border: #F4F4F4 solid;
+    border-radius: 5px;
     
 }
 
-
-.wrong {
-    background-color: #E53935 !important;
-    color: white !important;
+.try {
+    background-color: #179FF3;
+    color: rgb(250, 249, 249);
 }
 
 
-.progress {
-    margin-top: 20px;
-    height: 8px;
-    border-radius: 5px;
+.quit {
+    background-color: #F98F8F;
+    color: white;
 }
 
-.progress-fill {
-    height: 8px;
-    width: 0%;
-    background: #4CAF50;
-    border-radius: 5px;
+.see{
+    background-color: #5DCAB0;
+    color:white;
 }
